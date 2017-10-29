@@ -1,0 +1,21 @@
+<!-- Use a templated HTML printing scriptlet to import common stylesheet. -->
+<?!= HtmlService.createHtmlOutputFromFile('Stylesheet').getContent(); ?>
+
+<!-- Below is the HTML code that defines the sidebar element structure. -->
+<div class="sidebar branding-below">
+  <div class="block form-group" id="sidebar-value-block">
+    <label for="sidebar-value">С:</label>
+    <input id="sidebar-value" type="date" value="">
+  </div>
+  <div class="block form-group" id="sidebar-value-block">
+    <label for="sidebar-value2">по:</label>
+    <input id="sidebar-value2" type="date" value="">
+  </div>
+  <div class="block" id="sidebar-button-bar">
+    <button id="sidebar-put-button">Get</button>
+  </div>
+  <div id="sidebar-status"></div>
+</div>
+
+<!-- Use a templated HTML printing scriptlet to import JavaScript. -->
+<?!= HtmlService.createHtmlOutputFromFile('SidebarJavaScript').getContent(); ?>
